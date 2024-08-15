@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Evaluasi HTML Dasae</title>
+    </head>
+
+    <body>
+        <div>
+            <h1>
+                Selamat Datang di Evaluasi
+            </h1>
+            <p>
+                Halaman ini untuk menguji pemahaman peserta tentang elemen-elemen dasar dalam HTML. HTML adalah kependekan dari Hypertext Markup Language yang merupakan sebuah bahasa markup. HTML adalah kode untuk membuat struktur halaman suatu website yang menarik, saling terhubung satu dengan yang lainnya, dan yang pasti dapat diakses melalui internet. 
+            </p>
+            <h2>
+                Pengelolaan Teks
+            </h2>
+            <p>
+                Teks berisi beberapa bagian yang <strong>tebal</strong> dan <em>miring</em>
+            </p>
+            <hr>
+            <blockquote cite="https://www.ruangmenyala.com/article/read/kata-kata-bijak-kehidupan">
+                <p>Perjalanan ribuan mil dimulai dengan satu langkah</p>
+            </blockquote>
+            <p>-Lao Tzu</p>
+        </div>
+        <div>
+            <h2>
+                Hyperlink dan Gambar
+            </h2>
+            <a href="https://wartakota.tribunnews.com/2024/08/14/sebanyak-18-paskibraka-2024-perempuan-dipaksa-copot-jilbab-di-ikn-dikecam-mui-ini-daftarnya">Berita tentang paskibraka IKN</a>
+            <br>
+            <img src="assets/garuda.jpg" alt="Lambang Garuda">
+        </div>
+        <div>
+            <h2>
+                Membuat daftar
+            </h2>
+            <ol>
+                <li>Ingin mendapatkan pekerjaan yang baik</li>
+                <li>Memiliki portofolio pribadi</li>
+                <li>Selalu produktif</li>
+            </ol>
+            <ul>
+                <li>Mempelajari teknologi baru</li>
+                <li>Fotografi</li>
+                <li>Menggambar</li>
+            </ul>
+        </div>
+        <div>
+            <h2>
+                Tabel Data
+            </h2>
+            <table border="1">
+                <tr>
+                    <th>Nama</th>
+                    <th>Umur</th>
+                    <th>Kota</th>
+                </tr>
+                <tr>
+                    <td>Joko</td>
+                    <td>29</td>
+                    <td>Solo</td>
+                </tr>
+                <tr>
+                    <td>Iwan</td>
+                    <td>26</td>
+                    <td>Bandung</td>
+                </tr>
+                <tr>
+                    <td>Samsul</td>
+                    <td>35</td>
+                    <td>Solo</td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <h2>
+                Formulir Pendaftaran
+            </h2>
+            <form action="/submit" method="post">
+                <label for="nama">Nama Lengkap:</label>
+                <input type="text" id="nama" name="nama"><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+
+                <label for="gender">Jenis Kelamin:</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Laki-laki</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Perempuan</label><br><br>
+
+                <select name="Kota">
+                    <option value="semarang">Semarang</option>
+                    <option value="yogyakarta">Yogyakarta</option>
+                    <option value="jakarta">Jakarta</option>
+                </select> 
+
+                <input type="checkbox" name="agreement"> Setuju dengan syarat dan ketentuan tersebut
+
+                <label for="pesan">Pesan:</label><br>
+                <textarea id="pesan" name="pesan"></textarea><br><br>
+
+                <button type="button">kirim</button>
+            </form>
+        </div>
+    </body>
+</html>
