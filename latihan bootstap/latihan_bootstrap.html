@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Bootstrap</title>
+    <!-- Sertakan Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- CSS Kustom dengan Media Queries -->
+    <style>
+        /* Mengatur ukuran teks yang lebih besar pada layar kecil */
+        @media (max-width: 768px) {
+            h1, h2 {
+                font-size: 1.5rem;
+            }
+            /* Menyembunyikan sidebar pada layar kecil */
+            aside {
+                display: none;
+            }
+        }
+        
+        /* Memastikan teks terlihat jelas pada layar yang lebih kecil */
+        @media (max-width: 576px) {
+            body {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Container utama untuk layout -->
+    <div class="container">
+
+        <!-- Navbar Bootstrap -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Brand</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Header -->
+        <header class="row">
+            <div class="col-12">
+                <h1>Judul Website</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id lorem at odio feugiat tincidunt.</p>
+            </div>
+        </header>
+
+        <!-- Konten utama dan Sidebar -->
+        <main class="row">
+            <!-- Konten Utama -->
+            <div class="col-md-8">
+                <h2>Konten Utama</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sollicitudin, tellus vitae condimentum egestas, libero dolor auctor tellus, eu consectetur neque elit quis nunc. Sed aliquet ligula eros, sed gravida odio bibendum non.</p>
+                <p>Phasellus ullamcorper, dui et tristique lacinia, sem turpis tincidunt ligula, eu aliquet lectus metus id nulla.</p>
+            </div>
+            <!-- Sidebar -->
+            <aside class="col-md-4 d-none d-md-block">
+                <h2>Sidebar</h2>
+                <p>Morbi ut mi sit amet augue volutpat bibendum. Proin aliquet odio id justo sagittis, in scelerisque elit rhoncus. Suspendisse potenti. Etiam ultricies nec lorem nec auctor.</p>
+            </aside>
+        </main>
+
+        <!-- Section Cards -->
+        <section class="row">
+            <!-- Card 1 -->
+            <div class="col-sm-6 col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="Gambar 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Card 1</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac arcu ac lorem cursus ullamcorper.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-sm-6 col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="Gambar 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Card 2</h5>
+                        <p class="card-text">Suspendisse potenti. Fusce facilisis, nisl vel euismod pellentesque, felis justo dapibus odio, ac convallis orci lacus et odio.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-sm-6 col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="Gambar 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Card 3</h5>
+                        <p class="card-text">Aliquam erat volutpat. Integer dapibus ligula ac hendrerit facilisis. Etiam fermentum erat at nisi condimentum accumsan.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="row bg-dark text-white p-4 mt-5">
+            <div class="col-md-3 col-sm-6 mb-3">
+                <h5>Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white">Home</a></li>
+                    <li><a href="#" class="text-white">About Us</a></li>
+                    <li><a href="#" class="text-white">Services</a></li>
+                    <li><a href="#" class="text-white">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-3">
+                <h5>About Us</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet accumsan arcu. Curabitur vehicula massa nec purus aliquam, id facilisis ligula lacinia.</p>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-3">
+                <h5>Contact Info</h5>
+                <p><strong>Address:</strong> 1234 Street Name, City, Country</p>
+                <p><strong>Phone:</strong> +1 234 567 890</p>
+                <p><strong>Email:</strong> info@example.com</p>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-3">
+                <h5>Follow Us</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white">Facebook</a></li>
+                    <li><a href="#" class="text-white">Twitter</a></li>
+                    <li><a href="#" class="text-white">Instagram</a></li>
+                    <li><a href="#" class="text-white">LinkedIn</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Sertakan Bootstrap JS dan jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
