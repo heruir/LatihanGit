@@ -1,0 +1,155 @@
+/* Reset margin dan padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Gaya umum untuk body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Navigasi */
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+}
+
+/* Section Utama (Main) */
+main {
+    flex: 1;
+    padding: 2rem;
+    background-color: white;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Container untuk form kontak */
+.contact-form-container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+/* Gaya untuk judul form */
+.contact-form-container h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+/* Label dan input/textarea */
+.contact-form-container label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #555;
+}
+
+.contact-form-container input,
+.contact-form-container textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+/* Tombol submit */
+.contact-form-container button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form-container button:hover {
+    background-color: #45a049;
+}
+
+/* Responsif: Atur ulang layout untuk layar kecil */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        text-align: center;
+    }
+    body {
+        font-size: 18px;
+        padding: 2rem;
+    }
+    .about-container {
+        flex-direction: row;
+    }
+    .about-image img {
+        max-width: 100%; /* Gambar tidak akan lebih besar dari kontainernya */
+        height: auto; /* Pertahankan rasio aspek */
+        border-radius: 8px;
+    }
+}
+
+/* Atur ulang layout untuk desktop (min-width: 1024px) */
+@media (min-width: 1024px) {
+    body {
+        font-size: 20px;
+        padding: 2.5rem;
+    }
+
+    .about-container {
+        max-width: 1200px;
+        margin: auto;
+    }
+}
+}
